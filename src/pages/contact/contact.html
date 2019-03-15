@@ -1,17 +1,27 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      <!--BIND: Interpolação-->
+     {{ title }}
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+        <ion-icon name="logo-twitter" item-start></ion-icon>
+        Followers
+        <ion-badge item-end>260k</ion-badge>
+      </ion-item>
+      <ion-item>
+          <ion-icon name="logo-facebook" item-start></ion-icon>
+          Followers
+          <ion-badge item-end>260k</ion-badge>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="logo-instagram" item-start></ion-icon>
+            Followers
+            <ion-badge item-end>260k</ion-badge>
+          </ion-item>
+          <a (click)="goToSlide()">Vai para o Slide</a> 
 </ion-content>
