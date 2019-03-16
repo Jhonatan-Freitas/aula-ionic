@@ -11,6 +11,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SlidePage } from '../pages/slide/slide';
+import { ConfigProvider } from '../providers/config/config';
+import { CorreiosPage } from '../pages/correios/correios';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { SlidePage } from '../pages/slide/slide';
     ContactPage,
     HomePage,
     TabsPage,
-    SlidePage
+    SlidePage,
+    CorreiosPage
   ],
   imports: [
     BrowserModule,
@@ -32,12 +35,14 @@ import { SlidePage } from '../pages/slide/slide';
     ContactPage,
     HomePage,
     TabsPage,
-    SlidePage
+    SlidePage,
+    CorreiosPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ConfigProvider
   ]
 })
 export class AppModule {}
