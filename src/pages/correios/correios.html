@@ -1,4 +1,3 @@
-<!---->
 <ion-header>
   <ion-navbar>
     <ion-title text-center>Lista de CEPs</ion-title>
@@ -10,13 +9,14 @@
   <ion-list>
     <ion-item>
       <ion-label>Estado</ion-label>
-      <ion-input type="text" autofocus [(ngModel)]="txtEstado"></ion-input>
+      <ion-input type="text"  maxlength="2" autofocus [(ngModel)]="txtEstado"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Cidade</ion-label>
       <ion-input type="text" [(ngModel)]="txtCidade"></ion-input>
     </ion-item>
+
     <ion-item>
       <ion-label>Logradouro</ion-label>
       <ion-input type="text" [(ngModel)]="txtLogradouro"></ion-input>
@@ -24,6 +24,6 @@
   </ion-list>
 
   <div padding>
-    <button (click)="exibeInputs()" ion-button color="primary" block>localizar</button>
+    <button (click)="listaEnderecos()" ion-button color="primary" block>localizar</button>
   </div>
 </ion-content>
